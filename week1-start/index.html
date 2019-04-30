@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .main {
+        margin: 20px 20px 20px;
+      }
+    </style>
+
+    <title>Patient Registration</title>
+  </head>
+  <body class="main">
+    <div>
+      <form>
+        <table class="table table-bordered table-hover" style="width:50%">
+          <tr>
+            <td>Name</td>
+            <td><input type="text" placeholder="Enter Name" id="firstName" /></td>
+          </tr>
+          <tr>
+            <td>Surname</td>
+            <td>
+              <input type="text" placeholder="Enter Surname" id="lastName" />
+            </td>
+          </tr>
+          <tr>
+            <td>Age</td>
+            <td><input type="text" placeholder="Enter Age" id="age" /></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="genderType" id="genderType-female" value="Female" />
+              Female
+              <input type="radio" name="genderType" id="genderType-male" value="Male" /> Male
+            </td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>
+              <select id="city">
+                <option value="London">London</option>
+                <option value="Birmingham">Birmingham</option>
+                <option value="Liverpool">Liverpool</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Addictions</td>
+
+            <td>
+              <input
+                type="checkbox"
+                name="addictions"
+                value="None"
+                id="addictions-none"
+                checked="true"
+              />
+              None
+              <input type="checkbox" name="addict" value="Smoke" id="addictions-smoke" />
+              Smoke
+              <input
+                type="checkbox"
+                name="addict"
+                value="Alcohol"
+                id="addictions-alcohol"
+              />
+              Alcohol
+              <input type="checkbox" name="addict" value="Drug" id="addictions-drug" />
+              Drug
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <input
+                class="btn btn-success"
+                type="submit"
+                value="SAVE"
+                id="btnSave"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div>
+      <table class="table" style="text-align:center">
+        <thead class="thead-dark">
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Addictions</th>
+          </tr>
+        </thead>
+        <tbody id="tblPatients" class="table table-hover"></tbody>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
