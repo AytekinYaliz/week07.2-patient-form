@@ -1,8 +1,6 @@
 
 var patients = [];
 
-document.getElementById("btnSave").addEventListener("click", save);
-
 function save() {
   const formData = getFormData();
   // ...

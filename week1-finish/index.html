@@ -20,86 +20,85 @@
   </head>
   <body class="main">
     <div>
-      <form>
-        <table class="table table-bordered table-hover" style="width:50%">
-          <tr>
-            <td>Name</td>
-            <td><input type="text" placeholder="Enter Name" id="firstName" /></td>
-          </tr>
-          <tr>
-            <td>Surname</td>
-            <td>
-              <input type="text" placeholder="Enter Surname" id="lastName" />
-            </td>
-          </tr>
-          <tr>
-            <td>Age</td>
-            <td><input type="text" placeholder="Enter Age" id="age" /></td>
-          </tr>
-          <tr>
-            <td>Gender</td>
-            <td>
-              <input type="radio" name="genderType" id="genderType-female" value="Female" />
-              Female
-              <input type="radio" name="genderType" id="genderType-male" value="Male" /> Male
-            </td>
-          </tr>
-          <tr>
-            <td>City</td>
-            <td>
-              <select id="city">
-                <option value="London">London</option>
-                <option value="Birmingham">Birmingham</option>
-                <option value="Liverpool">Liverpool</option>
-              </select>
-            </td>
-          </tr>
+      <table class="table table-bordered table-hover" style="width:50%">
+        <tr>
+          <td>Name</td>
+          <td><input type="text" placeholder="Enter Name" id="firstName" /></td>
+        </tr>
+        <tr>
+          <td>Surname</td>
+          <td>
+            <input type="text" placeholder="Enter Surname" id="lastName" />
+          </td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td><input type="text" placeholder="Enter Age" id="age" /></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="genderType" id="genderType-female" value="Female" />
+            Female
+            <input type="radio" name="genderType" id="genderType-male" value="Male" /> Male
+          </td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td>
+            <select id="city">
+              <option value="London">London</option>
+              <option value="Birmingham">Birmingham</option>
+              <option value="Liverpool">Liverpool</option>
+            </select>
+          </td>
+        </tr>
 
-          <tr>
-            <td>Addictions</td>
+        <tr>
+          <td>Addictions</td>
 
-            <td>
-              <input
-                type="checkbox"
-                name="addictions"
-                value="None"
-                id="addictions-none"
-                checked="true"
-              />
-              None
-              <input type="checkbox" name="addict" value="Smoke" id="addictions-smoke" />
-              Smoke
-              <input
-                type="checkbox"
-                name="addict"
-                value="Alcohol"
-                id="addictions-alcohol"
-              />
-              Alcohol
-              <input type="checkbox" name="addict" value="Drug" id="addictions-drug" />
-              Drug
-            </td>
-          </tr>
+          <td>
+            <input
+              type="checkbox"
+              name="addictions"
+              value="None"
+              id="addictions-none"
+              checked="true"
+            />
+            None
+            <input type="checkbox" name="addict" value="Smoke" id="addictions-smoke" />
+            Smoke
+            <input
+              type="checkbox"
+              name="addict"
+              value="Alcohol"
+              id="addictions-alcohol"
+            />
+            Alcohol
+            <input type="checkbox" name="addict" value="Drug" id="addictions-drug" />
+            Drug
+          </td>
+        </tr>
 
-          <tr>
-            <td></td>
-            <td>
-              <input
-                class="btn btn-success"
-                type="submit"
-                value="SAVE"
-                id="btnSave"
-              />
-            </td>
-          </tr>
-        </table>
-      </form>
+        <tr>
+          <td></td>
+          <td>
+            <input
+              class="btn btn-success"
+              type="submit"
+              value="SAVE"
+              id="btnSave"
+            />
+          </td>
+        </tr>
+      </table>
     </div>
 
     <div>
       <table class="table" style="text-align:center">
         <thead class="thead-dark">
           <tr>
+            <th>#</th>
             <th>Name</th>
             <th>Surname</th>
             <th>Age</th>

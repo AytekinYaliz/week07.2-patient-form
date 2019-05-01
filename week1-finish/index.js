@@ -3,12 +3,12 @@ var patients = [];
 
 document.getElementById("btnSave").addEventListener("click", save);
 
-function save() {
+function save(e) {
   const formData = getFormData();
 
   if (validateFormData(formData)) {
+    formData.id = patients.length + 1;
     patients.push(formData);
-    console.log(patients);
     renderPatients();
   } else {
     alert("There are some missing fields!");
@@ -67,6 +67,7 @@ function renderPatients() {
   for (var i = 0; i < patients.length; i++) {
     render +=
       `<tr id='${i}'>` +
+      "<td>" + patients[i].id + "</td>" +
       "<td>" +
       patients[i].name +
       "</td>" +
