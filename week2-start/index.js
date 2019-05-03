@@ -90,3 +90,11 @@ function renderPatients() {
   }
   document.getElementById("tblPatients").innerHTML = render;
 }
+
+function deletePatient(element) {
+  
+}
+
+function sortPatients(sortBy) {
+
+}
